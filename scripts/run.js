@@ -1,5 +1,5 @@
 const main = async () => {
-    const wacContractFactory = await Headers.ethers.getContractFactory('WavePortal');
+    const waveContractFactory = await hre.ethers.getContractFactory('WavePortal');
     const waveContract = await waveContractFactory.deploy();
     await waveContract.deployed();
     console.log("Contract deployed to:", waveContract.address);
